@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Profile</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./profile.css" />
+    <link rel="shortcut icon" href="../images (1).png" type="image/x-icon" />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+
+    <nav>
+      <div class="brand">
+        <a href="../shop/index.html">Profile</a>
+      </div>
+      <div class="nav-items">
+        <a href="../index.html">Home</a>
+        <a href="../cart/index.html">My Cart</a>
+      </div>
+  </nav>
+  
+  <section class="container">
+      <p>My Profile</p>
+      <input type="text" id="firstName" placeholder=" First Name">
+      <input type="text" id="lastName" placeholder=" Last Name">
+      <button type="submit" id="saveInfo">Save info</button>
+      <p>Edit Password</p>
+      <input type="password" id="oldPassword" placeholder=" Old Password">
+      <input type="password" id="newPassword" placeholder=" New Password">
+      <input type="password" id="confirmNewPass" placeholder=" New Confirm Password">
+      <button type="submit" id="chanePass">Change Password</button>
+      <button type="submit" id="logoutBtn">Logout</button>
+
+    <script src="./profile.js" async defer></script>
+  </body>
+</html>
