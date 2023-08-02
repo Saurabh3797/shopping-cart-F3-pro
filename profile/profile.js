@@ -88,6 +88,6 @@ function logout() {
   localStorage.setItem("curntUser", JSON.stringify(currentUser));
   localStorage.removeItem("token");
   alert("logged out successfully!");
-  window.location.href = "./login.html";
+  window.location.href = "../login/login.html";
 }
 
