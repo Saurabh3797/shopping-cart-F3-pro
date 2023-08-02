@@ -85,8 +85,9 @@ logoutButton.addEventListener("click", logout);
 function logout() {
   const currentUser = JSON.parse(localStorage.getItem("curntUser"));
   delete currentUser.token;
-  localStorage.setItem("curntUser", JSON.stringify(curntUser));
+  localStorage.setItem("curntUser", JSON.stringify(currentUser));
   localStorage.removeItem("token");
   alert("logged out successfully!");
   window.location.href = "./login.html";
 }
+
