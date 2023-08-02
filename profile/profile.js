@@ -33,7 +33,7 @@ function updateInfo() {
     savedUsers[userIndex] = savedCurrentUser;
 
     localStorage.setItem("users", JSON.stringify(savedUsers));
-    localStorage.setItem("currentUser", JSON.stringify(savedCurrentUser));
+    localStorage.setItem("curntUser", JSON.stringify(savedCurrentUser));
 
     console.log("savedUsers:", savedUsers);
     console.log("savedCurrentUser:", savedCurrentUser);
@@ -63,7 +63,7 @@ changePass.addEventListener("click", () => {
       savedUsers[userIndex] = savedCurrentUser;
 
       localStorage.setItem("users", JSON.stringify(savedUsers));
-      localStorage.setItem("currentUser", JSON.stringify(savedCurrentUser));
+      localStorage.setItem("curntUser", JSON.stringify(savedCurrentUser));
 
       console.log("savedUsers:", savedUsers);
       console.log("savedCurrentUser:", savedCurrentUser);
@@ -83,9 +83,9 @@ const logoutButton = document.getElementById("logoutBtn");
 logoutButton.addEventListener("click", logout);
 
 function logout() {
-  const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+  const currentUser = JSON.parse(localStorage.getItem("curntUser"));
   delete currentUser.token;
-  localStorage.setItem("currentUser", JSON.stringify(currentUser));
+  localStorage.setItem("curntUser", JSON.stringify(curntUser));
   localStorage.removeItem("token");
   alert("logged out successfully!");
   window.location.href = "./login.html";
